@@ -8,11 +8,11 @@ class CreateRealEstateTransactions < ActiveRecord::Migration[5.0]
       t.integer :beds, null: false, default: 0
       t.integer :baths, null: false, default: 0
       t.string :type, null: false, default: ''
-      t.integer :sq_ft, null: false, default: 0
+      t.integer :sq__ft, null: false, default: 0
       t.datetime :sale_date
       t.integer :price, null: false, default: 0
-      t.decimal :latitude, null: false, default: 0
-      t.decimal :longitude, null: false, default: 0
+      t.string :latitude, null: false, default: ''
+      t.string :longitude, null: false, default: ''
     end
   end
 end

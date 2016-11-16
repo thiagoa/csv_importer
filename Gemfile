@@ -10,6 +10,7 @@ gem 'rubocop', require: false
 gem 'webpack-rails'
 gem 'foreman'
 gem 'sidekiq'
+gem 'activerecord-import'
 
 group :development do
   gem "spring"

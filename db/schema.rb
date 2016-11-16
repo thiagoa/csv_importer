@@ -17,18 +17,18 @@ ActiveRecord::Schema.define(version: 20161113220245) do
   enable_extension "hstore"
 
   create_table "real_estate_transactions", force: :cascade do |t|
-    t.string   "street",    default: "",    null: false
-    t.string   "city",      default: "",    null: false
-    t.string   "zip",       default: "",    null: false
-    t.string   "state",     default: "",    null: false
-    t.integer  "beds",      default: 0,     null: false
-    t.integer  "baths",     default: 0,     null: false
-    t.string   "type",      default: "",    null: false
-    t.integer  "sq_ft",     default: 0,     null: false
+    t.string   "street",    default: "", null: false
+    t.string   "city",      default: "", null: false
+    t.string   "zip",       default: "", null: false
+    t.string   "state",     default: "", null: false
+    t.integer  "beds",      default: 0,  null: false
+    t.integer  "baths",     default: 0,  null: false
+    t.string   "type",      default: "", null: false
+    t.integer  "sq__ft",    default: 0,  null: false
     t.datetime "sale_date"
-    t.integer  "price",     default: 0,     null: false
-    t.decimal  "latitude",  default: "0.0", null: false
-    t.decimal  "longitude", default: "0.0", null: false
+    t.integer  "price",     default: 0,  null: false
+    t.string   "latitude",  default: "", null: false
+    t.string   "longitude", default: "", null: false
   end
 
 end
